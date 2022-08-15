@@ -40,7 +40,6 @@ class HistoryPages extends State<HistoryPage> {
                       onPressed: () async {
                         await FlutterDownloader.open(
                             taskId: tasks![index].taskId);
-                        print('=======${tasks![index].taskId}');
                       },
                       child: Text('open'))),
               SizedBox(
@@ -59,7 +58,8 @@ class HistoryPages extends State<HistoryPage> {
                       child: Text('delete')))
             ],
           ),
-        ),
+        ), 
+
         separatorBuilder: (context, index) => SizedBox(
           height: 10,
           child: Divider(),

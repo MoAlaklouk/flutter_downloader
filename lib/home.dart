@@ -100,7 +100,7 @@ class _HomeState extends State<Home> {
                           onPressed: () async {
                             downloadFile(
                                 url:
-                                    'https://file-examples.com/wp-content/uploads/2017/02/file-sample_1MB.docx ');
+                                    'https://file-examples.com/wp-content/uploads/2017/02/file-sample_1MB.doc');
                           },
                         ),
                       ],
@@ -142,7 +142,7 @@ class _HomeState extends State<Home> {
               Row(
                 children: [
                   TextButton(
-                    child: Text('downlioad History '),
+                    child: Text('download History '),
                     onPressed: (() async {
                       setState(() {
                         HistoryPages().load();
